@@ -7,9 +7,11 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'https://poc-module-federation-app-shell.vercel.app',
-      'https://poc-module-federation-products.vercel.app',
+      // 'https://poc-module-federation-products.vercel.app',
+      'http://localhost:8080',
+      // 'http://localhost:3000',
     ],
   });
-  await app.listen(8080);
+  await app.listen(8081);
 }
 bootstrap();
