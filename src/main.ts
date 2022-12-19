@@ -11,6 +11,7 @@ async function bootstrap() {
       'http://localhost:8080',
       // 'http://localhost:3000',
     ],
+    methods: ['POST', 'PUT', 'DELETE', 'GET']
   });
   await app.listen(8081);
 }
