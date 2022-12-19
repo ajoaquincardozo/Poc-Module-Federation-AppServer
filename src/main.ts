@@ -5,6 +5,7 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors({
+    allowedHeaders: 'Content-Type, Authorization',
     origin: [
       'https://poc-module-federation-app-shell.vercel.app',
       // 'https://poc-module-federation-products.vercel.app',
