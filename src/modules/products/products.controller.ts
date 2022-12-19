@@ -1,7 +1,7 @@
-import { Controller, Get, Param } from '@nestjs/common';
-import { AxiosResponse } from 'axios';
+import { Controller, Get, Param, UseGuards } from '@nestjs/common';
 import { Product, ProductDetail } from './product.response';
 import { ProductsService } from './products.service';
+import { JwtAuthGuard } from '../../auth/jwt-auth.guard';
 
 @Controller('products')
 export class ProductsController {
@@ -13,6 +13,7 @@ export class ProductsController {
   }
 
   @Get(":id")
+  @UseGuards(JwtAuthGuard)
   async getOne(@Param("id") id: string): Promise<ProductDetail> {
     return await this.productsService.findOne(id);
   }
