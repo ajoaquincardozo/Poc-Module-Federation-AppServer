@@ -11,6 +11,7 @@ async function bootstrap() {
       // 'https://poc-module-federation-products.vercel.app',
       'http://localhost:8080',
       // 'http://localhost:3000',
+      "https://poc-iframe-app-shell.vercel.app"
     ],
     // methods: ["GET","OPTIONS","PATCH","DELETE","POST","PUT"]
   });
