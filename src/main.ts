@@ -10,6 +10,7 @@ async function bootstrap() {
       'https://poc-module-federation-app-shell.vercel.app',
       // 'https://poc-module-federation-products.vercel.app',
       'http://localhost:8080',
+      'http://localhost:8082',
       // 'http://localhost:3000',
       "https://poc-iframe-app-shell.vercel.app"
     ],
