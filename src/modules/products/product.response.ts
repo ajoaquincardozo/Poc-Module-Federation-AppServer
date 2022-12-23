@@ -6,7 +6,8 @@ export type Product = {
     description: string;
 }
 
-export type ProductDetail = Omit<Product, "thumbnail"> & {
+export type ProductDetail = Omit<Product, "thumbnail" | "title"> & {
+    name: string;
     image: string;
     longDescription: string;
 }
