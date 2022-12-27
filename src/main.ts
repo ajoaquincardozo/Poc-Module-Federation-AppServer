@@ -12,7 +12,8 @@ async function bootstrap() {
     'http://localhost:8082',
     'http://127.0.0.1:8082',
     // 'http://localhost:3000',
-    "https://poc-iframe-app-shell.vercel.app"
+    "https://poc-iframe-app-shell.vercel.app",
+    "https://poc-iframe-products.vercel.app"
   ];
 
   app.enableCors({
